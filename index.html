@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <title>Whack a Mole</title>
+</head>
+<body>
+      <div class="background">
+
+            <div class="block block-info">
+                  <h1 class="h1">WHACK A MOLE</h1>
+                  <div class="hardness">
+                        <div class="hardness-easy">Easy</div>
+                        <div class="hardness-normal">Normal</div>
+                        <div class="hardness-hard">Hard</div>
+                  </div>
+                  <div class="start">
+                        <h2 class="start-text">START</h2>
+                  </div>
+                  <div class="score-table">
+                        <h3 class="h3">SCORE</h3>
+                        <div class="score-line">Last score: <span class="last-score">0</span></div>
+                  </div>
+            </div>
+
+
+            <div class="block block-game">
+                  <div class="cell" data-cell="1">
+                        <div class="gopher"></div>
+                  </div>
+                  <div class="cell" data-cell="2">
+                        <div class="gopher"></div>
+                  </div>
+                  <div class="cell" data-cell="3">
+                        <div class="gopher"></div>
+                  </div>
+                  <div class="cell" data-cell="4">
+                        <div class="gopher"></div>
+                  </div>
+                  <div class="cell" data-cell="5">
+                        <div class="gopher"></div>
+                  </div>
+                  <div class="cell" data-cell="6">
+                        <div class="gopher"></div>
+                  </div>
+                  <div class="cell" data-cell="7">
+                        <div class="gopher"></div>
+                  </div>
+                  <div class="cell" data-cell="8">
+                        <div class="gopher"></div>
+                  </div>
+                  <div class="cell" data-cell="9">
+                        <div class="gopher"></div>
+                  </div>
+                  <div class="win-message hidden">
+                        Your score: <span class="win-message-score"></span>
+                        <div class="win-message-button">OK</div>
+                  </div>
+            </div>
+
+            <div class="block block-statisticks">
+                  <div class="timer-block">
+                        <h3 class="h3">TIMER</h3>
+                        <div class="timer">SECONDS: <span class="timer-value">15</span></div>
+                  </div>
+                  <div class="score-block">
+                        <h3 class="h3">SCORE</h3>
+                        <div class="score">POINTS: <span class="score-value">0</span></div>
+                  </div>
+                  <div class="mod-block">
+                        <h3 class="h3">MOD</h3>
+                        <div class="mod">normal</div>
+                  </div>
+                  
+                  <div class="variables-table">
+                        <h3 class="h3">VARIABLES</h3>
+                        <div class="variables-line unhidden-time">Unhidden time = 1 seconds!</div>
+                        <div class="variables-line hit-score">Score per hit = 2 points!</div>
+                        <div class="variables-line number-hit">Hit = 0!</div>
+                  </div>
+      
+            </div>
+
+            <div class="cursor"></div>
+           
+
+      </div>
+      
+
+
+
+      <script src="main.js"></script>
+</body>
+</html>

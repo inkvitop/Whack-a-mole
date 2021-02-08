@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Frijole', cursive;
+  color: white;
+}
+
+.background {
+  height: 100vh;
+  background-image: url(/img/mainBG.jpg);
+  display: flex;
+  padding: 80px 60px 80px 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-info {
+  width: 400px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 40px 0px 40px;
+}
+
+.h1 {
+  font-size: 50px;
+  color: #2e70ff;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  border: 2px solid white;
+  text-align: center;
+  user-select: none;
+}
+
+.hardness {
+  display: flex;
+  width: 300px;
+}
+.hardness-easy {
+  height: 40px;
+  width: 100px;
+  background-color: rgba(95, 191, 71, 0.7);
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.hardness-normal {
+  height: 40px;
+  width: 100px;
+  background-color: rgba(72, 114, 191, 0.7);
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.hardness-hard {
+  height: 40px;
+  width: 100px;
+  background-color: rgba(240, 82, 82, 0.7);
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.start {
+  height: 80px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
+.start-text {
+  font-size: 30px;
+  user-select: none;
+  color: #2e70ff;
+}
+
+.h3 {
+  color: #2e70ff;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.score-table {
+  position: relative;
+  width: 320px;
+  border: 2px solid white;
+  overflow: hidden;
+  user-select: none;
+}
+
+.score-line {
+  height: 30px;
+  width: 320px;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+.score-line:nth-child(odd) {
+  background-color: rgba(55, 55, 55, 0.6);
+  color: white;
+}
+
+.last-score {
+  color: black;
+}
+
+.block-game {
+  width: 620px;
+  height: 620px;
+  background-image: url(/img/istockphoto-942183348-612x612.jpg);
+  border: 10px solid #2e70ff;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: none;
+  user-select: none;
+  position: relative;
+}
+
+.cell {
+  height: 180px;
+  width: 180px;
+  margin: 10px;
+  border: 2px solid white;
+  background-image: url(img/hole.png);
+  background-size: 96%;
+  background-position-y: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.gopher {
+  width: 60px;
+  height: 100px;
+  top: 50px;
+  margin-top: 6px;
+  background-image: url(img/gopher.png);
+  background-repeat: no-repeat;
+  background-position-y: 90px;
+  transition: 0.2s linear;
+}
+
+.up {
+  background-position-y: 0px;
+}
+
+.catch {
+  background-image: url(img/gopher-catched.png);
+}
+
+.block-statisticks {
+  width: 400px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 40px 0px 40px;
+  user-select: none;
+}
+
+.timer-block {
+  border: 2px solid white;
+  overflow: hidden;
+  user-select: none;
+}
+
+.timer {
+  background-color: rgba(55, 55, 55, 0.6);
+  width: 250px;
+  text-align: center;
+}
+
+.timer-value {
+  color: #2e70ff;
+}
+
+.score-block {
+  border: 2px solid white;
+  overflow: hidden;
+  user-select: none;
+}
+
+.score {
+  background-color: rgba(55, 55, 55, 0.6);
+  width: 250px;
+  text-align: center;
+}
+
+.score-value {
+  color: #2e70ff;
+}
+
+.mod-block {
+  border: 2px solid white;
+  overflow: hidden;
+  user-select: none;
+}
+
+.mod {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 250px;
+  text-align: center;
+  color: #2e70ff;
+}
+
+.variables-table {
+  width: 320px;
+  border: 2px solid white;
+  overflow: hidden;
+}
+
+.variables-line {
+  height: 30px;
+  width: 320px;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+.variables-line:nth-child(odd) {
+  background-color: rgba(55, 55, 55, 0.6);
+  color: white;
+}
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  background-image: url(/img/hammerPNG5050.png);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.win-message {
+  height: 80px;
+  width: 200px;
+  position: absolute;
+  left: 200px;
+  top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #032601;
+}
+.win-message-button {
+  border: 3px solid white;
+  background-color: rgba(78, 133, 73, 0.6);
+  height: 30px;
+  width: 60px;
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
