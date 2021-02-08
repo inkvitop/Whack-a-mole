@@ -8,7 +8,7 @@
 
 .background {
   height: 100vh;
-  background-image: url(/img/mainBG.jpg);
+  background-image: url(img/mainBG.jpg);
   display: flex;
   padding: 80px 60px 80px 60px;
   justify-content: center;
@@ -120,7 +120,7 @@
 .block-game {
   width: 620px;
   height: 620px;
-  background-image: url(/img/istockphoto-942183348-612x612.jpg);
+  background-image: url(img/istockphoto-942183348-612x612.jpg);
   border: 10px solid #2e70ff;
   border-radius: 5px;
   display: flex;
@@ -240,7 +240,7 @@
 .cursor {
   width: 50px;
   height: 50px;
-  background-image: url(/img/hammerPNG5050.png);
+  background-image: url(img/hammerPNG5050.png);
   position: absolute;
   top: 0px;
   left: 0;
