@@ -64,10 +64,10 @@ gamePlace.addEventListener('mousemove', (e) => {
       cursor.style.left = (e.pageX - 7)+'px';
       
       gamePlace.addEventListener('mousedown', () => {
-            cursor.style.backgroundImage = `url(/img/hammerPNGbang5050.png)`;
+            cursor.style.backgroundImage = `url(img/hammerPNGbang5050.png)`;
       })
       gamePlace.addEventListener('mouseup', () => {
-            cursor.style.backgroundImage = `url(/img/hammerPNG5050.png)`;
+            cursor.style.backgroundImage = `url(img/hammerPNG5050.png)`;
       })
 })
 gamePlace.addEventListener('mouseover', (e) => {
@@ -221,9 +221,9 @@ function bang(e) {
             this.classList.remove('up');
             this.classList.add('catch');
             score.textContent = Number(score.textContent) + oneBangScore;
-            cursor.style.backgroundImage = `url(/img/hammerPNGbangHit5050.png)`;
+            cursor.style.backgroundImage = `url(img/hammerPNGbangHit5050.png)`;
             setTimeout(() => {
-                  cursor.style.backgroundImage = `url(/img/hammerPNG5050.png)`;
+                  cursor.style.backgroundImage = `url(img/hammerPNG5050.png)`;
             }, 90)
             setTimeout(() => {
                   this.classList.remove('catch');
